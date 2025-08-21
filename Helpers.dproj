@@ -127,11 +127,21 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
+        <DCCReference Include="src\ColorHelper.pas"/>
+        <DCCReference Include="src\DatabaseHelperExample.pas">
+            <Form>frmDatabaseExample</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\DateTimeHelper.pas"/>
+        <DCCReference Include="src\FDQueryHelper.pas"/>
+        <DCCReference Include="src\FieldHelper.pas"/>
+        <DCCReference Include="src\IntegerHelper.pas"/>
+        <DCCReference Include="src\IntegerHelperSimple.pas"/>
+        <DCCReference Include="src\StringHelper.pas"/>
         <DCCReference Include="src\untPrincipal.pas">
             <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\StringHelper.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -158,7 +168,7 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="5">
-                <DeployFile LocalName="Win32\Debug\Helpers.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="bin\Helpers.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>Helpers.exe</RemoteName>
                         <Overwrite>true</Overwrite>
